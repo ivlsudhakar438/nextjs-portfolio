@@ -1,0 +1,47 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+:root { --bg:#EEF7F1; --ink:#10291F; --muted:#4D6459; --rule:#C9DDD0; --card:#fff; --accent:#17794F;
+  --serif:"Instrument Serif",Georgia,serif; --sans:"Figtree",system-ui,-apple-system,sans-serif; color-scheme: light; }
+:root[data-theme="dark"] { --bg:#0F1714; --ink:#E8EEEA; --muted:#97A6A0; --rule:#243029; --card:#152019; --accent:#5FD19E; color-scheme: dark; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 var(--sans); }
+a { color:var(--accent); }
+a:focus-visible, button:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+ol { list-style:none; padding:0; margin:0; }
+.wrap { max-width:1040px; margin:0 auto; padding:0 24px; }
+.narrow { max-width:720px; }
+section { padding:72px 0; border-top:1px solid var(--rule); }
+h1,h2,h3 { font-weight:400; margin:0; }
+h2 { font-family:var(--serif); font-size:2.5rem; line-height:1.1; margin-bottom:36px; }
+h3 { font:600 1.15rem var(--sans); }
+.hero { background:#0E3B2E; color:#EAF6EF; padding:88px 0 72px; }
+.hero h1 { font:400 clamp(2rem,5vw,3.6rem)/1.05 var(--serif); white-space:nowrap; }
+.hero h1 em { color:#7BE0B0; }
+.lede { color:#A8CDBB; font-size:1.2rem; max-width:40ch; margin:24px 0 32px; }
+.contact { display:flex; flex-wrap:wrap; gap:12px 28px; }
+.contact a { color:#EAF6EF; border-bottom:1px solid #2B5C4B; text-decoration:none; }
+.stats { display:grid; grid-template-columns:repeat(3,1fr); grid-gap:24px; gap:24px; margin-top:56px; }
+.stats strong { display:block; font:400 2.6rem/1 var(--serif); }
+.stats span { color:#A8CDBB; font-size:.95rem; }
+.job { display:grid; grid-template-columns:170px 1fr; grid-gap:8px 40px; gap:8px 40px; padding:24px 0; border-top:1px solid var(--rule); }
+.job:first-child { border-top:0; padding-top:0; }
+.job .when, .job .org, .job ul { color:var(--muted); }
+.job ul { padding-left:18px; margin:0; }
+.filters { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px; }
+.filters button { font:inherit; font-size:.92rem; padding:8px 16px; border-radius:999px; border:1px solid var(--rule); background:transparent; color:var(--ink); cursor:pointer; }
+.filters button[aria-pressed="true"] { background:var(--ink); color:var(--bg); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); grid-gap:20px; gap:20px; }
+.card { background:var(--card); border:1px solid var(--rule); border-radius:14px; padding:26px; display:flex; flex-direction:column; gap:10px; }
+.card p { margin:0; color:var(--muted); font-size:.97rem; }
+.card .meta { font-size:.9rem; }
+.stack { list-style:none; padding:0; margin:auto 0 0; display:flex; flex-wrap:wrap; gap:6px; }
+.stack li { font-size:.82rem; padding:3px 10px; border-radius:6px; border:1px solid var(--rule); }
+.skills dt { font-weight:600; }
+.skills dd { margin:0 0 16px; color:var(--muted); }
+.edu p { margin:0 0 18px; }
+.edu strong { display:block; font-weight:600; }
+footer { border-top:1px solid var(--rule); padding:40px 0; color:var(--muted); font-size:.92rem; }
+.theme { position:fixed; top:16px; right:16px; font:inherit; font-size:.85rem; padding:6px 12px; border-radius:999px; border:1px solid var(--rule); background:var(--bg); color:var(--ink); cursor:pointer; z-index:10; }
+@media (max-width:720px) { .stats { grid-template-columns:1fr; } .job { grid-template-columns:1fr; } .hero h1 { white-space:normal; } }
+
